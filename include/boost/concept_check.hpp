@@ -36,6 +36,7 @@
 # pragma warning( disable : 4458 ) // declaration hides class member
 # pragma warning( disable : 4510 ) // default constructor could not be generated
 # pragma warning( disable : 4610 ) // object 'class' can never be instantiated - user-defined constructor required
+# pragma warning( disable : 4996 ) // warning STL4007: Many result_type typedefs and all argument_type, first_argument_type, and second_argument_type typedefs are deprecated in C++17
 #endif
 
 namespace boost
