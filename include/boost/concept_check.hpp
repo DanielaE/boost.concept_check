@@ -323,7 +323,6 @@ namespace boost
    private:
       void test(boost::false_type)
       {
-          f(arg);               // "priming the pump" this way keeps msvc6 happy (ICE)
           Return r = f(arg);
           ignore_unused_variable_warning(r);
       }
@@ -352,7 +351,6 @@ namespace boost
    private:
       void test(boost::false_type)
       {
-          f(first,second);
           Return r = f(first, second); // require operator()
           (void)r;
       }
